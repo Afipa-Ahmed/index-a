@@ -1,0 +1,254 @@
+.main h1{
+    color: rgb(31, 85, 126);
+    font-family: "Oswald", sans-serif;
+   padding: 10px 100px;
+ 
+}
+
+.btn{
+    padding: 80px 200px;
+}
+.btn-1{
+    color: white;
+    padding: 15px 25px;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.btn-1::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-1:hover::before{
+    right: -100px;
+}
+.btn-1:hover::after{
+    left: -100px;
+}
+.btn-1::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn-2{
+    border-radius: 10px;
+    color: white;
+    padding: 20px 30px;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    border: none;
+   overflow: hidden;
+}
+.btn-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 200, 0);
+    z-index: -1;
+    transition: 1s;
+}
+.btn-2:hover::before{
+    right: -200px;
+}
+.btn-3{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    padding: 25px 35px;
+    font-size: 21px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.btn-3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    transition: 1s;
+}
+.btn-3:hover::after{
+    left: -200px;
+}
+.btn-4{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 30px 40px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.btn-4::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background-color: orange;
+    z-index: -1;
+    transition: 1s;
+}
+.btn-4:hover::after{
+    bottom: -100px;
+}
+.btn-4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background-color: orange;
+    z-index: -1;
+    transition: 1s;
+}
+.btn-4:hover::before{
+    top: -100px;
+}
+.btn-5{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 35px 45px;
+   border-radius: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+   
+    overflow: hidden;
+}
+.btn-5::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: -1;
+    transition: 1s;
+}
+.btn-5:hover::after{
+    bottom: -100px;
+}
+.btn-6{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 40px 50px;
+    font-size: 21px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.btn-6::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    z-index: -1;
+    transition: 1s;
+}
+.btn-6:hover::before{
+    top: -200px;
+}
+.animation{
+    height: 100vh;
+}
+img{
+    height: 200px;
+    width: 200px;
+   
+    position: absolute;
+    top: 400px;
+    left: 0px;
+
+    animation: bird 3s infinite;
+}
+@keyframes bird{
+    0% {
+        top: 400px;
+        left: 0px;
+    }
+    10% {
+        top: 350px;
+        left: 100px;
+    }
+    20% {
+        top: 300px;
+        left: 200px;
+    }
+    30{
+        top: 250px;
+        left: 300px;
+    }
+    40% {
+        top: 200px;
+        left: 400px;
+    }
+    50%{
+        top: 150px;
+        left: 500px;
+    }
+    60%{
+        top: 100px;
+        left: 600px;
+    }
+    70%{
+        top: 50px;
+        left: 700px;
+    }
+    80%{
+        top:0px;
+        left:800px;
+    }
+    90%{
+        top:-50px;
+        left:900px;
+    }
+    100%{
+        top:-100px;
+        left:1000px;
+    }
+}
